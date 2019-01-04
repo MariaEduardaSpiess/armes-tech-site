@@ -7,7 +7,8 @@ body {
 }
   
 footer {
-  background-color:  #391f67;
+  /* background-color:  #391f67; */
+  background-color: transparent;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -19,16 +20,30 @@ footer {
 
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
-    bottom: 3rem;
+    bottom: 15%;
     z-index: 10;
     /* color: #f27200; */
   }
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
-    height: 95vh;
-    background-color: #777;
+    height: 100vh;
+    /* background-color: #777; */
+    background-color: transparent;
   }
+
+  .first {
+    background:  linear-gradient( to top, #391f67, transparent ), url(slide1.jpg) center;
+  }
+
+  .second {
+    background:  linear-gradient( to top, #391f67, transparent ), url(slide2.jpg) center;
+  }
+
+  .third {
+    background:  linear-gradient( to top, #391f67, transparent ), url(slide3.jpg) center;
+  }
+
   .carousel-item > img {
     position: absolute;
     top: 0;
@@ -51,5 +66,29 @@ footer {
       margin-bottom: 1.25rem;
       font-size: 1.25rem;
       line-height: 1.4;
+    }
+  }
+
+  @media (max-width: 20em) {
+    .carousel-indicators {
+      margin-bottom: 3.5rem;
+    }
+
+    .carousel-caption h1 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (min-width: 25em) and (max-width: 30em) {
+    .carousel-indicators {
+      margin-bottom: 1.5rem;
+    }
+
+    .carousel-caption h1 {
+      font-size: 2rem;
+    }
+
+    .carousel-caption p {
+      margin-bottom: 0;
     }
   }
