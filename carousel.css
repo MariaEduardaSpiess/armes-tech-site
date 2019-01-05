@@ -75,7 +75,7 @@ footer {
     }
   }
 
-  @media (max-width: 20em) {
+  @media (max-width: 30em) {
     .carousel-indicators {
       margin-bottom: 3.5rem;
     }
@@ -91,7 +91,7 @@ footer {
     }
   }
 
-  @media (min-width: 25em) and (max-width: 30em) {
+  @media (min-width: 30em) {
     .carousel-indicators {
       margin-bottom: 1.5rem;
     }
